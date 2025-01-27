@@ -57,11 +57,14 @@ senza > tutti gli elementi */
 }
 
 #uno {
+  position: fixed;
   background-color: hsl(
     0,
     100%,
     52%
   ); /* colore girando attorno al cilindro dominanza riminanza */
+  top: 300px;
+  left: 500px;
 }
 
 #due {
