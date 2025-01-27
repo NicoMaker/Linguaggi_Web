@@ -101,6 +101,9 @@ lista non ordinata
     </tr>
 </table>
 
+ <!-- immagine-->
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="272" height="92" />
+
 ```
 
 al suo interno si possono conrenire diverse tag come padri e figli
@@ -115,6 +118,8 @@ al suo interno si possono conrenire diverse tag come padri e figli
 prima forma di comunicazione storica per avere i dati con tutti i caratteri disponibili (128 caratteri 2^7 caratteri)
 
 ![Tabella Ascci](https://th.bing.com/th/id/R.bcf26098d65dc039b385210134f05a20?rik=qchBuc5OMxZJsQ&riu=http%3a%2f%2fwww.pierolucarelli.it%2fcodiciascii%2fasciistd.gif&ehk=VJvBQBStaQ6mRj%2fqup1C1TRbWLW0Fv2NhC1xKOy3zd4%3d&risl=&pid=ImgRaw&r=0)
+
+
 
 ## Tabella ASCII Estesa
 
