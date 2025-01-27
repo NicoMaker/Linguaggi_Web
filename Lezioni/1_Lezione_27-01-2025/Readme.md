@@ -6,6 +6,7 @@
 
 - [1 Esercizio](Esercizi/1_Esercizio/Prova.html)
 - [2 Esercizio](Esercizi/2_Esercizio/Prova.html)
+- [3 Esercizio](Esercizi/3_Esercizio/Prova.html)
 
 ## TAG
 
@@ -104,6 +105,12 @@ lista non ordinata
 
  <!-- immagine-->
 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" width="272" height="92" />
+
+    <!-- link con il paragrafo come ti serve che vai  trascina punto della pagina-->
+    <a href="#"></a>
+
+    <!-- apre in altre pagine in altre pagine -->
+    <a href="https://www.google.com/" target="_blank"></a>
 
 ```
 
