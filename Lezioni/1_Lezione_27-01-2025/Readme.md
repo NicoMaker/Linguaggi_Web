@@ -4,7 +4,8 @@
 
 ## Esercizi
 
-- [1 Esercizio](Esercizi/1_Esercizio/)
+- [1 Esercizio](Esercizi/1_Esercizio/prova.html)
+- [2 Esercizio](Esercizi/2_Esercizio/prova.html)
 
 ## TAG
 
