@@ -4,19 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Esempio con css</title>
-    <style> /* Stile inline per tutti*/
+    <style>
+      /* Stile inline per tutti*/
       h1 {
         color: red;
         font-size: 50px;
       }
     </style>
-    <link rel="stylesheet" href="style.css" /> <!-- Collegamento al file css -->
-    
+    <link rel="stylesheet" href="style.css" />
+    <!-- Collegamento al file css -->
   </head>
   <body>
-    <h1 style="color: blue">Testo Blu</h1> <!-- Stile inline -->
+    <h1 style="color: blue">Testo Blu</h1>
+    <!-- Stile inline -->
     <h1>Testo Rosso</h1>
 
-    <h1 class="verde">Testo Verde</h1> <!-- Stile esterno -->
+    <h1 class="verde">Testo Verde</h1>
+    <!-- Stile esterno -->
+
+    <p id="id1">Ciao</p>
+    <p id="id2" class="rosa, giallo">Ciao</p>
+    <p id="id3">Ciao</p>
+    <p id="id4">Ciao</p>
+    <p id="id5">Ciao</p>
+    <p id="id6" class="rosa">Ciao</p>
+
+    <div id="ciao">
+      <p>Paragrafo1</p>
+      <div>
+        <p>Paragrafo2</p>
+      </div>
+    </div>
   </body>
 </html>

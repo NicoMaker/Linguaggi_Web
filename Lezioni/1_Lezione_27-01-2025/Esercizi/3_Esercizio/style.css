@@ -3,10 +3,39 @@ h1 {
   font-size: 50px;
 }
 
-.verde {
+.verde,
+#id3 {
   color: green;
 }
 
 h1 {
   color: violet;
+}
+
+.rosa {
+  color: pink;
+}
+
+p {
+  color: chocolate;
+}
+
+.rosa .rosa {
+  color: pink;
+}
+
+.giallo {
+  color: yellow;
+}
+
+
+/* con > solo quelli derivati sottostanti diretti
+senza > tutti gli elementi */
+#ciao > p { 
+  color: red;
+}
+
+
+#id3 {
+  color: #2019ac;
 }
