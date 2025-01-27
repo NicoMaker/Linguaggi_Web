@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  flex-direction: row;
+  space-between: 10px;
+  justify-content: space-evenly; /* Spazio tra i bottoni uguali agli estremi */
+}
+.button-container {
+  display: flex;
+  gap: 20px; /* Spazio tra i bottoni */
+  flex-wrap: wrap; /* va a capo se non c'è spazio */
+}
+button {
+  padding: 20px 40px; /* Bottoni più grandi */
+  font-size: 20px; /* Testo più grande */
+  cursor: pointer;
+  border: none;
+  border-radius: 10px; /* Angoli più arrotondati */
+  color: white;
+}
+/* Colori dei bottoni */
+.button-container button:nth-child(1) {
+  background-color: red;
+}
+.button-container button:nth-child(2) {
+  background-color: green;
+}
+.button-container button:nth-child(3) {
+  background-color: blue;
+}
+.button-container button:nth-child(4) {
+  background-color: pink;
+}

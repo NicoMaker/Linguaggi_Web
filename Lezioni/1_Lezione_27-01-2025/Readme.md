@@ -8,6 +8,7 @@
 - [2 Esercizio](Esercizi/2_Esercizio/Prova.html)
 - [3 Esercizio](Esercizi/3_Esercizio/)
 - [4 Esercizio](Esercizi/4_Esercizio/)
+- [5 Esercizio](Esercizi/5_Esercizio/)
 
 ## TAG
 
