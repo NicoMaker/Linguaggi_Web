@@ -7,11 +7,12 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #f4f4f4;
-  color: #333;
+  background-color: #e6fffa; /* Colore chiaro tendente al verde acqua */
+  color: #2d2d2d; /* Testo leggibile su sfondo chiaro */
   display: flex;
   flex-direction: column;
   height: 100vh;
+  
 }
 
 /* Header */
@@ -20,8 +21,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
-  color: white;
+  background-color: #1a202c; /* Colore scuro moderno */
+  color: #edf2f7; /* Bianco sporco per il testo */
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
@@ -31,6 +32,7 @@ header {
 
 header h1 {
   font-size: 1.8em;
+  color: #63b3ed; /* Azzurro accento */
 }
 
 header nav ul {
@@ -43,14 +45,14 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: white;
+  color: #edf2f7;
   text-decoration: none;
   font-size: 1em;
   transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-  color: #ff6347;
+  color: #63b3ed; /* Azzurro accento */
 }
 
 /* Contenitore principale */
@@ -70,22 +72,19 @@ header nav ul li a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #f9f9f9;
-}
-
-.bio {
-  background-color: #fff;
 }
 
 .section h2 {
   font-size: 2em;
   margin-bottom: 20px;
+  color: #2b6cb0; /* Blu accento per titoli */
 }
 
 .section p {
   font-size: 1.2rem;
   margin-bottom: 15px;
   line-height: 1.6;
+  color: #4a5568; /* Testo grigio scuro */
 }
 
 /* Tabella */
@@ -99,7 +98,7 @@ table {
 table,
 th,
 td {
-  border: 1px solid #ddd;
+  border: 1px solid #e2e8f0; /* Grigio chiaro */
 }
 
 th,
@@ -109,14 +108,24 @@ td {
 }
 
 th {
-  background-color: #f4f4f4;
+  background-color: #edf2f7; /* Sfondo chiaro per intestazioni */
   font-weight: bold;
+  color: #2d3748; /* Testo scuro */
+}
+
+td {
+  background-color: #ffffff; /* Sfondo bianco per celle */
+  color: #2d3748; /* Testo scuro */
+}
+
+tr:nth-child(even) {
+  background-color: #f7fafc; /* Alternanza di righe per leggibilità */
 }
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #1a202c; /* Colore scuro moderno */
+  color: #edf2f7; /* Testo chiaro */
   text-align: center;
   padding: 15px;
   position: fixed;
