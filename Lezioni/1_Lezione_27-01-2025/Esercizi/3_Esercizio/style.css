@@ -28,17 +28,23 @@ p {
   color: yellow;
 }
 
-
 /* con > solo quelli derivati sottostanti diretti
 senza > tutti gli elementi */
-#ciao > p { 
+#ciao > p {
   color: red;
 }
-
 
 #id3 {
   color: #2019ac;
   color: rgb(0, 0, 240);
-  background-color: #2019ac;
   color: white;
+}
+
+#id3 {
+  color: hsla(
+    120,
+    100%,
+    50%,
+    0.5
+  ); /* colore girando attorno al cilindro dominanza riminanza */
 }
