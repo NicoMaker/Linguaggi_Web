@@ -48,3 +48,26 @@ senza > tutti gli elementi */
     0.5
   ); /* colore girando attorno al cilindro dominanza riminanza */
 }
+
+#uno,
+#due {
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+}
+
+#uno {
+  background-color: hsl(
+    0,
+    100%,
+    52%
+  ); /* colore girando attorno al cilindro dominanza riminanza */
+}
+
+#due {
+  background-color: hsl(
+    120,
+    100%,
+    52%
+  ); /* colore girando attorno al cilindro dominanza riminanza */
+}
