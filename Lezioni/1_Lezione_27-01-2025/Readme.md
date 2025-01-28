@@ -2,6 +2,8 @@
 
 # Lezione 27-01-2025
 
+- **[Guida Display Flex](Diplay_Flex.md)**
+
 ## Esercizi
 
 - [1 Esercizio](Esercizi/1_Esercizio/Prova.html)
