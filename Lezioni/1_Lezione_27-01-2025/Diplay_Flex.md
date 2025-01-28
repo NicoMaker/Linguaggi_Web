@@ -74,13 +74,6 @@ Flexbox (o Flexible Box Layout) è un sistema di layout CSS progettato per allin
 
 ---
 
-### **Output Visivo**
-
-Una disposizione di tre elementi in una riga con spazi uguali tra loro:
-
-
----
-
 ## **Direzione degli assi**
 
 ### **Asse Principale e Asse Trasversale**
