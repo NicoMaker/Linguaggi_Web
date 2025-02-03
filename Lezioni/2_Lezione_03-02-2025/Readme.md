@@ -7,3 +7,4 @@
 
 - [1 Esercizio](Esercizi/1_Esercizio/index.html)
 - [2 Esercizio](Esercizi/2_Esercizio/index.html)
+- [3 Esercizio](Esercizi/3_Esercizio/index.html)

@@ -1,0 +1,27 @@
+/* Imposta il body come un flex container */
+body {
+  display: flex;
+  justify-content: center; /* Centra orizzontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Imposta l'altezza del corpo per occupare tutta la finestra */
+  margin: 0; /* Rimuove il margine predefinito */
+  overflow: hidden; /* Evita che vengano visualizzate barre di scorrimento */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Crea 3 colonne di uguale larghezza */
+  gap: 10px;
+  justify-items: center; /* Centra gli elementi orizzontalmente */
+  align-items: center; /* Centra gli elementi verticalmente */
+  width: 100%; /* Imposta la larghezza al 100% dello spazio disponibile */
+  max-width: 800px; /* Limita la larghezza massima (opzionale) */
+}
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+}

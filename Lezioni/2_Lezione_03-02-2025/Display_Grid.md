@@ -249,6 +249,38 @@ Utilizzati per creare un numero dinamico di colonne o righe in base al contenuto
 </div>
 ```
 
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Crea 3 colonne di uguale larghezza */
+  grid-template-rows: 100px 200px; /* Crea 2 righe di altezza 100px e 200px */
+  gap: 10px; /* Spazio tra le celle */
+}
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.item1 {
+  grid-column: 1 / 2; /* L'elemento occuperà la colonna 1 */
+  grid-row: 1 / 2; /* L'elemento occuperà la riga 1 */
+}
+
+.item2 {
+  grid-column: 2 / 3; /* L'elemento occuperà la colonna 2 */
+  grid-row: 1 / 2; /* L'elemento occuperà la riga 1 */
+}
+
+.item3 {
+  grid-column: 1 / 3; /* L'elemento occuperà le colonne 1 e 2 */
+  grid-row: 2 / 3; /* L'elemento occuperà la riga 2 */
+}
+```
+
 ## 8. Conclusione
 
 CSS Grid è uno degli strumenti più potenti per il layout delle pagine web, permettendo di creare design complessi in modo semplice e flessibile. Sfruttando le proprietà come `grid-template-columns`, `grid-template-rows`, `gap` e altre, puoi ottenere layout altamente responsivi e ben strutturati.
