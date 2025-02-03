@@ -4,7 +4,7 @@
 
 # Guida Display Grid
 
-Ecco una guida completa su **CSS Grid** con tutti i comandi principali, formattata in Markdown:
+Ecco la guida completa su **CSS Grid** in un unico file Markdown, che include tutte le sezioni e gli esempi formattati:
 
 # Guida Completa a CSS Grid
 
@@ -129,13 +129,29 @@ Posiziona un elemento su una riga specifica.
 
 ### 4.3 `grid-area`
 
-Una shorthand per `grid-row` e `grid-column`.
+`grid-area` è una shorthand (abbreviazione) per `grid-row` e `grid-column`. Consente di definire l'area dell'elemento in una sola dichiarazione. La sintassi è la seguente:
+
+```css
+.item {
+  grid-area: riga-inizio / colonna-inizio / riga-fine / colonna-fine;
+}
+```
+
+Esempio:
 
 ```css
 .item {
   grid-area: 1 / 1 / 3 / 3; /* Righe da 1 a 3, colonne da 1 a 3 */
 }
 ```
+
+In questo esempio:
+- `1 / 1` definisce che l'elemento inizia dalla riga 1 e dalla colonna 1.
+- `3 / 3` definisce che l'elemento finisce alla riga 3 e alla colonna 3.
+
+Quindi, l'elemento occuperà una zona che va dalla riga 1 alla riga 3 e dalla colonna 1 alla colonna 3.
+
+Puoi anche usare `grid-area` con nomi di aree per assegnare l'elemento a una sezione specifica della griglia.
 
 ## 5. Allineamento e Giustificazione
 
@@ -192,10 +208,7 @@ Definisce la dimensione minima e massima di una colonna o riga.
 ```css
 .container {
   display: grid;
-  grid-template-columns: minmax(
-    100px,
-    1fr
-  ); /* La colonna avrà una larghezza minima di 100px e massima di 1fr */
+  grid-template-columns: minmax(100px, 1fr); /* La colonna avrà una larghezza minima di 100px e massima di 1fr */
 }
 ```
 
@@ -247,38 +260,6 @@ Utilizzati per creare un numero dinamico di colonne o righe in base al contenuto
   <div class="item item2">Elemento 2</div>
   <div class="item item3">Elemento 3</div>
 </div>
-```
-
-```css
-.container {
-  display: grid;
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* Crea 3 colonne di uguale larghezza */
-  grid-template-rows: 100px 200px; /* Crea 2 righe di altezza 100px e 200px */
-  gap: 10px; /* Spazio tra le celle */
-}
-
-.item {
-  background-color: lightblue;
-  padding: 20px;
-}
-
-.item1 {
-  grid-column: 1 / 2; /* L'elemento occuperà la colonna 1 */
-  grid-row: 1 / 2; /* L'elemento occuperà la riga 1 */
-}
-
-.item2 {
-  grid-column: 2 / 3; /* L'elemento occuperà la colonna 2 */
-  grid-row: 1 / 2; /* L'elemento occuperà la riga 1 */
-}
-
-.item3 {
-  grid-column: 1 / 3; /* L'elemento occuperà le colonne 1 e 2 */
-  grid-row: 2 / 3; /* L'elemento occuperà la riga 2 */
-}
 ```
 
 ## 8. Conclusione
