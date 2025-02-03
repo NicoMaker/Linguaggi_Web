@@ -18,7 +18,7 @@ Per creare una griglia, definisci un contenitore con la proprietà `display: gri
 .container {
   display: grid;
 }
-
+```
 
 ## 2. Definire le Colonne e le Righe
 
