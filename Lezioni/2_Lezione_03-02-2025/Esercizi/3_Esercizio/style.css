@@ -17,26 +17,25 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-input,
-button {
+input, button {
   padding: 10px 15px;
   margin: 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
-input:focus,
-button:hover {
-  border-color: #007bff;
+input:focus, button:hover {
+  border-color: #007BFF;
   outline: none;
   background-color: #f0f8ff;
 }
 
 button {
   cursor: pointer;
-  background-color: #007bff;
+  background-color: #007BFF;
   color: white;
   border: none;
 }
@@ -59,7 +58,7 @@ button:active {
 }
 
 .item {
-  background-color: #4caf50;
+  background-color: #4CAF50;
   color: white;
   padding: 20px;
   border-radius: 8px;
