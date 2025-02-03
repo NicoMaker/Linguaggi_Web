@@ -1,27 +1,75 @@
-/* Imposta il body come un flex container */
 body {
+  font-family: Arial, sans-serif;
   display: flex;
-  justify-content: center; /* Centra orizzontalmente */
-  align-items: center; /* Centra verticalmente */
-  height: 100vh; /* Imposta l'altezza del corpo per occupare tutta la finestra */
-  margin: 0; /* Rimuove il margine predefinito */
-  overflow: hidden; /* Evita che vengano visualizzate barre di scorrimento */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f9;
+  overflow-y: auto; /* Consente lo scrolling verticale */
+}
+
+.wrapper {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input,
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+button:hover {
+  border-color: #007bff;
+  outline: none;
+  background-color: #f0f8ff;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+button:active {
+  background-color: #0056b3;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* Crea 3 colonne di uguale larghezza */
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  justify-items: center; /* Centra gli elementi orizzontalmente */
-  align-items: center; /* Centra gli elementi verticalmente */
-  width: 100%; /* Imposta la larghezza al 100% dello spazio disponibile */
-  max-width: 800px; /* Limita la larghezza massima (opzionale) */
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  overflow-y: auto; /* Consente lo scroll verticale */
+  max-height: 70vh; /* Limita l'altezza massima per attivare lo scroll */
 }
 
 .item {
-  background-color: lightblue;
+  background-color: #4caf50;
+  color: white;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.item:hover {
+  background-color: #45a049;
+  transform: translateY(-5px);
 }

@@ -5,33 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid Template</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <div class="item">Elemento 1</div>
-      <div class="item">Elemento 2</div>
-      <div class="item">Elemento 3</div>
-      <div class="item">Elemento 1</div>
-      <div class="item">Elemento 2</div>
-      <div class="item">Elemento 3</div>
-      <div class="item">Elemento 1</div>
-      <div class="item">Elemento 2</div>
-      <div class="item">Elemento 3</div>
-      <div class="item">Elemento 1</div>
-      <div class="item">Elemento 2</div>
-      <div class="item">Elemento 3</div>
-      <div class="item">Elemento 1</div>
-      <div class="item">Elemento 2</div>
-      <div class="item">Elemento 3</div>
-      <div class="item">Elemento 1</div>
-      <div class="item">Elemento 2</div>
-      <div class="item">Elemento 3</div>
-      <div class="item">Elemento 1</div>
-      <div class="item">Elemento 2</div>
-      <div class="item">Elemento 3</div>
-      <div class="item">Elemento 1</div>
-      <div class="item">Elemento 2</div>
-      <div class="item">Elemento 3</div>
+    <div class="wrapper">
+      <input
+        type="number"
+        id="elementCount"
+        placeholder="Inserisci il numero di elementi"
+      />
+      <button onclick="createElements()">Crea Elementi</button>
+      <div class="container" id="container"></div>
     </div>
   </body>
 </html>
