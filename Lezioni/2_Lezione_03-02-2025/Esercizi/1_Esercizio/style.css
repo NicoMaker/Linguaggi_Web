@@ -67,6 +67,7 @@ section {
   overflow-y: auto;
   max-height: calc(100vh - 60px);
   display: block; /* Cambia da flex a block per permettere la visualizzazione del contenuto */
+  margin-top: 50px; /* Impostando un margine per separare la sezione dall'header */
 }
 
 .lorem {
@@ -164,8 +165,342 @@ section {
   text-align: center; /* Assicurati che il testo all'interno sia centrato */
 }
 
-h2{
+h2 {
   text-align: center;
   color: blue;
-  font-size: 2rem
+  font-size: 2rem;
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+  font-size: 2rem;
+  overflow: hidden; /* Impedisce che l'h2 venga scrollato */
+}
+
+section {
+  display: flex;
+  padding: 20px;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+  max-height: calc(100vh - 60px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; /* Assicura che tutto sia centrato */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #d32f2f;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Altezza dell'header per evitare sovrapposizioni */
+  padding-top: 20px; /* Distanza extra sotto l'header per la visibilità */
+}
+
+nav {
+  background-color: #1976d2;
+  width: 220px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 60px; /* Mantiene il menu sotto l'header */
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+section {
+  display: flex;
+  padding: 20px;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+  max-height: calc(100vh - 60px); /* Restante altezza per la sezione */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 20px; /* Distanzia il contenuto dalla parte superiore della sezione */
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #d32f2f;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Spazio sotto l'header per il corpo */
+  padding-top: 20px; /* Distanza extra sotto l'header */
+  overflow-y: auto;
+}
+
+nav {
+  background-color: #1976d2;
+  width: 220px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 60px; /* Posizione sticky del menu sotto l'header */
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+  max-height: calc(
+    100vh - 60px
+  ); /* La sezione occupa tutto lo spazio disponibile sotto l'header */
+  flex: 1;
+  padding-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative; /* Cambiato da sticky a relative per farlo uscire dal flusso sticky */
+  z-index: 999;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ddd; /* Linea di separazione */
+  margin-top: 20px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #d32f2f;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Spazio sotto l'header */
+}
+
+nav {
+  background-color: #1976d2;
+  width: 220px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 60px;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+  max-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Allinea il contenuto al centro */
+  text-align: center;
+  flex-direction: column;
+  padding-top: 60px; /* Distanzia il contenuto dall'header */
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.lorem {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+section:empty h2,
+section:empty .lorem {
+  transform: translateY(50%); /* Se la sezione è vuota, titolo e testo sono centrati */
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ddd;
+  margin-top: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #d32f2f;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Spazio sotto l'header */
+}
+
+nav {
+  background-color: #1976d2;
+  width: 220px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 60px;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+}
+
+section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+  max-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 60px; /* Distanzia il contenuto dall'header */
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: sticky;  /* Fissa il titolo */
+  top: 0;  /* Fissa il titolo nella parte superiore della sezione */
+  background-color: white;  /* Aggiungi uno sfondo per evitare che il testo del titolo venga coperto dal contenuto */
+  z-index: 10;  /* Assicurati che il titolo stia sopra gli altri contenuti */
+  padding: 10px 0;  /* Un po' di spazio per il padding */
+}
+
+.lorem {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #333;
 }
