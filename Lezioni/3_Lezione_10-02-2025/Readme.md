@@ -2,7 +2,10 @@
 
 # Lezione 10-02-2025
 
+- **[Guida Bootstrap](Guida_Bootstap.md)**
+
 ## Esercizi
 
 - [1 Esercizio](Esercizi/1_Esercizio/index.html)
 - [2 Esercizio](Esercizi/2_Esercizio/index.html)
+- [3 Esercizio](Esercizi/3_Esercizio/index.html)

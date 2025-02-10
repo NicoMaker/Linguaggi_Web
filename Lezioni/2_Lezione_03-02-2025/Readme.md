@@ -1,6 +1,7 @@
 [Vai al file Principale ](../../Readme.md)
 
 # Lezione 03-02-2025
+
 - **[Guida Display Grid](Display_Grid.md)**
 
 ## Esercizi
