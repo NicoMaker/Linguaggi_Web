@@ -49,15 +49,25 @@ fetch("dati.json")
 
     // Popolare la legenda
     const legenda = document.getElementById("legenda");
-    legenda.innerHTML = ""; // Pulisci prima la lista esistente
+    legenda.innerHTML = "";
 
     // Aggiungi il titolo "Legenda" sopra gli elementi
     legenda.innerHTML += `<h3>Legenda</h3>`;
 
+    // Aggiungi le province alla legenda
     provinces.forEach((province) => {
       legenda.innerHTML += `<p style="color:${province.color}">• ${
         province.name
-      }: ${province.population.toLocaleString()}</p>`;
+      }: ${province.population.toLocaleString()} - ${(
+        (province.population / popolazioneTotale) *
+        100
+      ).toFixed(2)} %</p>`;
     });
+
+    // Aggiungi la riga di divisione tra la leggenda e la popolazione totale
+    legenda.innerHTML += `<hr class="divider">`;
+
+    // Mostra la popolazione totale nella legenda
+    legenda.innerHTML += `<p class="totale"><strong>Popolazione Totale: </strong>${popolazioneTotale.toLocaleString()}</p>`;
   })
   .catch((error) => console.error("Errore nel caricare il file JSON:", error));
