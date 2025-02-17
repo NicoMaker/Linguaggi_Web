@@ -73,7 +73,6 @@ svg:hover {
 
 /* Titolo della legenda */
 #legenda h3 {
-  text-align: center;
   transition: color 0.3s ease; /* Transizione per il colore */
   margin-bottom: 10px; /* Aggiungi uno spazio tra il titolo e le voci della legenda */
 }
@@ -85,7 +84,6 @@ svg:hover {
 h3 {
   color: red;
 }
-
 
 /* Stile per la sezione "Popolazione Totale" nella legenda */
 #legenda .totale {
@@ -102,6 +100,6 @@ h3 {
   margin: 10px 0;
 }
 
-#legenda{
+#legenda {
   text-align: justify;
 }
