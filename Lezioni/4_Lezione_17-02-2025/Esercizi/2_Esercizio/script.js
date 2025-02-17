@@ -1,14 +1,17 @@
 // Funzione per caricare i dati JSON
-fetch('dati.json')
-  .then(response => response.json())
-  .then(data => {
+fetch("dati.json")
+  .then((response) => response.json())
+  .then((data) => {
     const provinces = data.province;
 
     // Popolazione totale
-    let popolazioneTotale = provinces.reduce((sum, province) => sum + province.population, 0);
+    let popolazioneTotale = provinces.reduce(
+      (sum, province) => sum + province.population,
+      0
+    );
 
     // Calcolo delle percentuali
-    provinces.forEach(province => {
+    provinces.forEach((province) => {
       province.percentuale = (province.population / popolazioneTotale) * 360;
     });
 
@@ -24,17 +27,19 @@ fetch('dati.json')
         x2 = x + radius * Math.cos(endAngle),
         y2 = y + radius * Math.sin(endAngle);
 
-      // Definisci il path del segmento
-      return `M ${x} ${y} L ${x1} ${y1} A ${radius} ${radius} 0 ${endAngle - startAngle > Math.PI ? 1 : 0} 1 ${x2} ${y2} Z`;
+      // Definisce il path del segmento
+      return `M ${x} ${y} L ${x1} ${y1} A ${radius} ${radius} 0 ${
+        endAngle - startAngle > Math.PI ? 1 : 0
+      } 1 ${x2} ${y2} Z`;
     }
 
     // Aggiungi i segmenti del grafico
-    const svg = document.querySelector("svg");
+    const svg = document.getElementById("grafico");
     let startAngle = 0;
 
-    provinces.forEach(province => {
-      const endAngle = startAngle + province.percentuale * (Math.PI / 180);
-      const path = createSlice(startAngle, endAngle, province.color);
+    provinces.forEach((province) => {
+      const endAngle = startAngle + province.percentuale * (Math.PI / 180),
+        path = createSlice(startAngle, endAngle, province.color);
       svg.innerHTML += `<path d="${path}" fill="${province.color}" />`;
       startAngle = endAngle;
     });
@@ -44,13 +49,15 @@ fetch('dati.json')
 
     // Popolare la legenda
     const legenda = document.getElementById("legenda");
-    legenda.innerHTML = ''; // Pulisci prima la lista esistente
+    legenda.innerHTML = ""; // Pulisci prima la lista esistente
 
     // Aggiungi il titolo "Legenda" sopra gli elementi
     legenda.innerHTML += `<h3>Legenda</h3>`;
 
-    provinces.forEach(province => {
-      legenda.innerHTML += `<p style="color:${province.color}">• ${province.name}: ${province.population.toLocaleString()}</p>`;
+    provinces.forEach((province) => {
+      legenda.innerHTML += `<p style="color:${province.color}">• ${
+        province.name
+      }: ${province.population.toLocaleString()}</p>`;
     });
   })
-  .catch(error => console.error('Errore nel caricare il file JSON:', error));
+  .catch((error) => console.error("Errore nel caricare il file JSON:", error));
