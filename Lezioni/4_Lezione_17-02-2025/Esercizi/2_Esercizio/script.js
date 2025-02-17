@@ -48,7 +48,7 @@ fetch("dati.json")
     provinces.sort((a, b) => b.population - a.population);
 
     // Popolare la legenda
-    const legenda = document.getElementById("legenda");
+    const legenda = document.getElementById("legenda:");
     legenda.innerHTML = "";
 
     // Aggiungi il titolo "Legenda" sopra gli elementi
