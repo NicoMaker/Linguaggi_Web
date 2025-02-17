@@ -2,22 +2,22 @@
   "province": [
     {
       "name": "Trieste",
-      "population": 200000,
+      "population": 228396,
       "color": "steelblue"
     },
     {
       "name": "Udine",
-      "population": 550000,
+      "population": 517143,
       "color": "tomato"
     },
     {
       "name": "Pordenone",
-      "population": 320000,
+      "population": 310763,
       "color": "green"
     },
     {
       "name": "Gorizia",
-      "population": 150000,
+      "population": 138314,
       "color": "orange"
     }
   ]
