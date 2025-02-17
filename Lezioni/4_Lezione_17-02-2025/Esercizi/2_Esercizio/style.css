@@ -101,3 +101,7 @@ h3 {
   border-top: 2px solid #3498db;
   margin: 10px 0;
 }
+
+#legenda{
+  text-align: justify;
+}
