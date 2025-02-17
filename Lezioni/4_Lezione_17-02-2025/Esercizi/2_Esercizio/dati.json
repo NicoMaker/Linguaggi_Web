@@ -1,0 +1,24 @@
+{
+  "province": [
+    {
+      "name": "Trieste",
+      "population": 200000,
+      "color": "steelblue"
+    },
+    {
+      "name": "Udine",
+      "population": 550000,
+      "color": "tomato"
+    },
+    {
+      "name": "Pordenone",
+      "population": 320000,
+      "color": "green"
+    },
+    {
+      "name": "Gorizia",
+      "population": 150000,
+      "color": "orange"
+    }
+  ]
+}

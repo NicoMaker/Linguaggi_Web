@@ -1,0 +1,87 @@
+/* Centrare il contenitore principale */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  flex-direction: column; /* Aggiungi per disporre gli elementi verticalmente */
+}
+
+/* Titolo */
+h1 {
+  margin-bottom: 20px; /* Spazio tra il titolo e il grafico */
+  transition: transform 0.3s ease, color 0.3s ease; /* Transizione per l'hover */
+  color: red;
+}
+
+h1:hover {
+  transform: scale(1.1); /* Ingrandisce il titolo al passaggio del mouse */
+  color: #3498db; /* Cambia colore al passaggio del mouse */
+}
+
+/* Contenitore per il grafico e la legenda */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: transform 0.3s ease; /* Transizione per l'hover */
+}
+
+/* Stile del grafico */
+svg {
+  width: 300px;
+  height: 300px;
+  transition: transform 0.3s ease; /* Transizione per l'hover */
+}
+
+svg:hover {
+  transform: scale(1.1); /* Ingrandisce il grafico al passaggio del mouse */
+}
+
+/* Contenitore per la legenda */
+#legenda {
+  margin-left: 20px;
+  text-align: center; /* Centra la legenda */
+  transition: transform 0.3s ease; /* Transizione per l'hover */
+}
+
+#legenda:hover {
+  transform: scale(1.1); /* Ingrandisce la legenda al passaggio del mouse */
+}
+
+/* Legenda */
+.legend-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra i paragrafi */
+  text-align: left;
+  gap: 10px; /* Distanza tra le voci della legenda */
+}
+
+/* Elementi della legenda */
+#legenda p {
+  transition: color 0.3s ease; /* Transizione per il colore */
+}
+
+#legenda p:hover {
+  color: #e74c3c; /* Cambia colore del testo al passaggio del mouse */
+  cursor: pointer; /* Cambia il cursore quando passa sopra la legenda */
+}
+
+/* Titolo della legenda */
+#legenda h3 {
+  text-align: center;
+  transition: color 0.3s ease; /* Transizione per il colore */
+  margin-bottom: 10px; /* Aggiungi uno spazio tra il titolo e le voci della legenda */
+}
+
+#legenda h3:hover {
+  color: #3498db; /* Cambia il colore del titolo della legenda al passaggio del mouse */
+}
+
+h3 {
+  color: red;
+}
